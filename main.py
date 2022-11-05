@@ -73,7 +73,6 @@ def get_date():
 client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
-wea, temperature = get_weather()
 data = {"date": {"value": get_date(), "color": get_random_color()},
         "city": {"value": city, "color": get_random_color()},
         "weather": {"value": get_weather()['weather'], "color": get_random_color()},
