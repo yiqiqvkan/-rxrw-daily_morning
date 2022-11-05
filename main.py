@@ -81,7 +81,7 @@ data = {"date": {"value": get_date(), "color": get_random_color()},
         "pipi": {"value": get_cai(), "color": get_random_color()},
         "love_day": {"value": get_togetherTime(), "color": get_random_color()},
         "birthday1": {"value": get_birthday(birthday_female), "color": get_random_color()},
-        "birthday1": {"value": get_birthday(birthday_male), "color": get_random_color()},
+        "birthday2": {"value": get_birthday(birthday_male), "color": get_random_color()},
         }
 res = wm.send_template(user_id, template_id, data)
 print(res)
