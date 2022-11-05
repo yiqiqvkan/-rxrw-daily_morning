@@ -17,7 +17,9 @@ key = "7f4e76064b4442f929c616ecb0dfc591"
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 
-user_ID = "o6Y0v5rgQYUcZCyOUFRteM6Sp4ec"
+user_ID = "o6Y0v5kd6i07UNT6Tn1RjVSKVSDw"
+tem_id = "7cRs8gB94dhXtj86ndnb4nVK2JtBwlAUFT6fnsiJidk"
+
 user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
 
@@ -99,5 +101,5 @@ data = {"date": {"value": get_date(), "color": get_random_color()},
         }
 res = wm.send_template(user_id, template_id, data)
 print(res)
-res = wm.send_template(user_ID, "7cRs8gB94dhXtj86ndnb4nVK2JtBwlAUFT6fnsiJidk", data)
+res = wm.send_template(user_ID, tem_id, data)
 print(res)
