@@ -9,7 +9,7 @@ from dateutil.utils import today
 
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
-birthday_female = os.environ['BIRTHDAY_FEMALE']
+birthday_female = "02-10"
 birthday_male = os.environ['BIRTHDAY_MALE']
 key = os.environ['KEY']
 
