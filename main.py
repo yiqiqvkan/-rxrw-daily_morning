@@ -8,6 +8,7 @@ import random
 from dateutil.utils import today
 
 start_date = os.environ['START_DATE']
+month = "02-01"
 city = os.environ['CITY']
 birthday_female = "02-10"
 birthday_male = "04-20"
@@ -37,6 +38,17 @@ def get_birthday(birthday):
 def get_togetherTime():
   next = datetime.strptime(start_date, "%Y-%m-%d")
   return (today() - next).days
+
+
+def get_togetherYear():
+    t = datetime.strptime(str(today().year) + "-" + month, "%Y-%m-%d")
+    together = datetime.strptime(start_date, "%Y-%m-%d")
+    if (today() - t).days > 0:
+        return "距离张小姐和孙先生的"+str(today().year - together.year + 1)+"周年还有"+str((datetime.strptime(str(today().year+1) + "-" + month, "%Y-%m-%d") - today()).days) + "天"
+    elif (today() - t).days == 0:
+        return "今天是张小姐和孙先生的"+str((today().year-together.year))+"周年"
+    else:
+        return "距离张小姐和孙先生的"+str(today().year - together.year)+"周年还有" + str((t-today()).days) + "天"
 
 
 def get_weather():
