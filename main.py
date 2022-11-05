@@ -10,8 +10,8 @@ from dateutil.utils import today
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday_female = "02-10"
-birthday_male = os.environ["BIRTHDAY_MALE"]
-key = os.environ["KEY"]
+birthday_male = "04-20"
+key = "7f4e76064b4442f929c616ecb0dfc591"
 
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
