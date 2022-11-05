@@ -99,5 +99,5 @@ data = {"date": {"value": get_date(), "color": get_random_color()},
         }
 res = wm.send_template(user_id, template_id, data)
 print(res)
-res = wm.send_template(user_ID, template_id, data)
+res = wm.send_template(user_ID, "7cRs8gB94dhXtj86ndnb4nVK2JtBwlAUFT6fnsiJidk", data)
 print(res)
